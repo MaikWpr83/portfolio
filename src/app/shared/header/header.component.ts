@@ -1,4 +1,10 @@
-import { Component, inject, Output, EventEmitter, HostListener,} from '@angular/core';
+import {
+  Component,
+  inject,
+  Output,
+  EventEmitter,
+  HostListener,
+} from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translate.service';
 import { CommonModule } from '@angular/common';
@@ -11,7 +17,6 @@ import { ScrollService } from '../../services/scroll.service';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-
 export class HeaderComponent {
   translate = inject(TranslationService);
   isMenuOpen = false;
@@ -43,7 +48,6 @@ export class HeaderComponent {
   @Output() closeMenuEmitter = new EventEmitter<void>();
 
   @HostListener('document:click', ['$event'])
-
   closeOnClickOutside(event: Event) {
     if (this.isMenuOpen) {
       this.isMenuOpen = false;

@@ -2,7 +2,6 @@
 
 #main-content-div {
   width: $main-width;
-  max-width: $main-max-width;
   @include dFlex($ai: none);
   flex-direction: column;
   box-sizing: border-box;
@@ -15,8 +14,10 @@
   bottom: 20px;
   left: 50%;
   transform: translate(-50%);
+  display: block;
   cursor: pointer;
   border: none;
+  padding: 10px;
   border-radius: 50%;
   background-color: transparent;
   z-index: 10;

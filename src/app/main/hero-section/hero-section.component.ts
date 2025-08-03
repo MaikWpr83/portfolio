@@ -1,18 +1,17 @@
-import { Component, inject} from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { BannerComponent } from './banner/banner.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translate.service';
 import { ScrollService } from '../../services/scroll.service';
-import { HeaderComponent } from "../../shared/header/header.component";
+import { HeaderComponent } from '../../shared/header/header.component';
 
 @Component({
   selector: 'app-hero-section',
-  standalone: true, 
-  imports: [BannerComponent, TranslateModule], 
+  standalone: true,
+  imports: [BannerComponent, TranslateModule],
   templateUrl: './hero-section.component.html',
-  styleUrls: ['./hero-section.component.scss']
+  styleUrls: ['./hero-section.component.scss'],
 })
-
 export class HeroSectionComponent {
   translate = inject(TranslationService);
 

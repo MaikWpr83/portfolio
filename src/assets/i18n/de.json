@@ -1,16 +1,16 @@
 {
   "link1": "Über mich",
-  "link2": "Skills",
+  "link2": "Fähigkeiten",
   "link3": "Projekte",
   "subtitle": "Frontend-Entwickler",
   "button1": "Meine Projekte",
-  "button2": "Kontaktieren Sie mich",
-  
+  "button2": "Schreiben Sie mir",
+
   "item1": "Für Remote-Arbeit verfügbar",
   "item2": "Frontend-Entwickler",
   "item3": "Stationiert in Sandersdorf/Brehna",
   "item4": "Bereit für Arbeit",
-   
+
   "who": "Wer ich bin !",
   "p1": "Guten Tag! Als Frontend-Entwickler aus Sandersdorf/Brehna bin ich von den grenzenlosen kreativen Chancen der Softwareentwicklung begeistert. Ich erstelle elegante und intuitive Webseiten und Anwendungen mit verlässlichen sowie zukunftssicheren Lösungen.",
   "p2": "Ob vor Ort in Sandersdorf/Brehna, remote oder in hybriden Modellen – ich bin flexibel und arbeite effizient.",
@@ -24,7 +24,7 @@
   "another": "andere Fähigkeiten?",
   "p6": "Zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
   "popup-msg": "Ich habe ein besonders Interesse an",
-  
+
   "projects": "Ausgewählte Projekte",
   "p7": "Erkunden Sie einige meiner Arbeiten - Sehen Sie meine Fähigkeiten in Aktion",
 
@@ -34,7 +34,7 @@
   "p8": "Schreiben Sie mir gerne mit­hilfe dieses Formulars. Ich freue mich, von Ihnen zu hören, Ihre Ideen kennen zu lernen und mit meiner Arbeit zu Ihrem Projekt beizutragen.",
   "p8.3": "Sie brauchen einen Frontend Entwickler?",
   "p8.6": "Sprechen wir darüber!",
-  
+
   "q1": "Wie lautet Ihr Name?",
   "placeholder1": "Hier deinen Namen eingeben",
   "err1": "Tut mir leid! Ihr Name fehlt noch",
@@ -121,5 +121,5 @@
   "policy-58": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar. Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.",
   "policy-59": "Anfrage per E-Mail, Telefon oder Telefax",
   "policy-60": "Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar. Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.",
-  "policy-61": "Quelle:"  
+  "policy-61": "Quelle:"
 }

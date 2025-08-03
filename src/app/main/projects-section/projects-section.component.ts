@@ -9,11 +9,15 @@ import { TranslationService } from '../../services/translate.service';
 @Component({
   selector: 'app-projects-section',
   standalone: true,
-  imports: [CommonModule, ProjectPopUpComponent, SingleProjectComponent, TranslateModule],
+  imports: [
+    CommonModule,
+    ProjectPopUpComponent,
+    SingleProjectComponent,
+    TranslateModule,
+  ],
   templateUrl: './projects-section.component.html',
-  styleUrl: './projects-section.component.scss'
+  styleUrl: './projects-section.component.scss',
 })
-
 export class ProjectsSectionComponent {
   translate = inject(TranslationService);
   service = inject(ProjectsService);

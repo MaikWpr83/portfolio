@@ -7,11 +7,10 @@ describe('ContactMeSectionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactMeSectionComponent]
+      imports: [ContactMeSectionComponent],
     })
-    
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(ContactMeSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

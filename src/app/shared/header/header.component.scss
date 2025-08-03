@@ -4,21 +4,21 @@ nav {
   position: relative;
   padding: $main-padding;
   background-color: rgba(0, 0, 0, 0);
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-image: url('../../../assets/img/bgg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../../assets/img/bgg.png");
   height: 100px;
   @include dFlex();
   > div {
     width: $main-width;
     @include dFlex($jc: space-between);
     .left {
-      >button{
+      > button {
         font-size: 1.2rem;
         white-space: nowrap;
       }
-      .logo-small{
+      .logo-small {
         display: none;
       }
       width: 36%;
@@ -27,9 +27,9 @@ nav {
     }
     .right {
       .logo {
-        width: 130px; 
+        width: 130px;
         height: auto;
-        position: relative; 
+        position: relative;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         button {
           display: flex;
@@ -49,27 +49,27 @@ nav {
           transition: opacity 0.3s ease-in-out;
         }
         .logo1 {
-          opacity: 1; 
+          opacity: 1;
         }
         .logo2 {
-          opacity: 0; 
+          opacity: 0;
         }
         &:hover {
           transform: scale(1.1);
           box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3); // Leichter Leuchteffekt
           .logo1 {
-            opacity: 0; 
+            opacity: 0;
           }
           .logo2 {
-            opacity: 1; 
+            opacity: 1;
           }
         }
       }
     }
-  }      
+  }
 }
 
-.switch{
+.switch {
   display: flex;
 }
 
@@ -82,11 +82,11 @@ label {
   border: 1px solid $main-color2;
   border-radius: 50px;
   transition: 0.3s;
-  &:hover{
-    border:1px solid white;
+  &:hover {
+    border: 1px solid white;
     cursor: pointer;
   }
-  &:hover .de{
+  &:hover .de {
     color: $main-color2;
   }
 }
@@ -97,7 +97,7 @@ label:after {
   height: 24px;
   position: absolute;
   top: -1px;
-  left: -1px; 
+  left: -1px;
   background: $main-color2;
   border-radius: 50px;
   cursor: pointer;
@@ -111,7 +111,7 @@ label:after {
 }
 
 input:checked + label:after {
-  left: 84px; 
+  left: 84px;
   transform: translateX(-100%);
 }
 
@@ -137,7 +137,7 @@ input:checked + label span.en {
 }
 
 input:checked + label span.de {
-  color: white
+  color: white;
 }
 
 input:checked + label:hover .en {
@@ -162,11 +162,16 @@ input:checked + label:hover .en {
 .hamburger-menu {
   @include dFlex($g: 6px);
   flex-direction: column;
-  background-image: linear-gradient(to top right, black 40%, rgb(15, 83, 72) 100%);
+  background-image: linear-gradient(
+    to top right,
+    black 40%,
+    rgb(15, 83, 72) 100%
+  );
+  width: 200px;
   padding: 16px;
   border-radius: 10px;
   position: relative;
-  top: 40px;
+  top: 70px;
   font-size: 1.2rem;
   z-index: 1;
 }
@@ -190,11 +195,11 @@ input:checked + label:hover .en {
 }
 
 @media (max-width: 800px) {
-  .logo1-small{
+  .logo1-small {
     height: 120px;
   }
 
-  .logo2-small{
+  .logo2-small {
     height: 120px;
   }
 
@@ -203,16 +208,16 @@ input:checked + label:hover .en {
   }
 
   .left {
-    .logo-small{
+    .logo-small {
       display: block !important;
-      .logo2-small{
+      .logo2-small {
         display: none;
       }
-      &:hover{
-        .logo2-small{
+      &:hover {
+        .logo2-small {
           display: block;
         }
-        .logo1-small{
+        .logo1-small {
           display: none;
         }
       }
@@ -226,7 +231,7 @@ input:checked + label:hover .en {
   }
 
   .right {
-    .logo{
+    .logo {
       display: none !important;
     }
   }

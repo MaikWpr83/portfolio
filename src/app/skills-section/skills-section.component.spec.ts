@@ -7,10 +7,9 @@ describe('SkillsSectionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SkillsSectionComponent]
-    })
-    .compileComponents();
-    
+      imports: [SkillsSectionComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(SkillsSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../services/translate.service';
-import { HeaderComponent } from "../shared/header/header.component";
+import { HeaderComponent } from '../shared/header/header.component';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -9,9 +9,8 @@ import { ActivatedRoute } from '@angular/router';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './imprint.component.html',
-  styleUrls: ['./imprint.component.scss']
+  styleUrls: ['./imprint.component.scss'],
 })
-
 export class ImprintComponent implements OnInit {
   constructor(
     private translate: TranslationService,
@@ -19,7 +18,7 @@ export class ImprintComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.fragment.subscribe(fragment => {
+    this.route.fragment.subscribe((fragment) => {
       if (!fragment || fragment === 'top') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }

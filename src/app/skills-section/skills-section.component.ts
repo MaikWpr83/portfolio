@@ -9,11 +9,9 @@ import { ProjectsService } from '../services/projects.service';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './skills-section.component.html',
-  styleUrl: './skills-section.component.scss'
+  styleUrl: './skills-section.component.scss',
 })
-
 export class SkillsSectionComponent {
-
   service = inject(ProjectsService);
   translate = inject(TranslationService);
 

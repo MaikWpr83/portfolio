@@ -1,8 +1,9 @@
 @import "../../../styles.scss";
 
 .contact-me-div {
-  background-color: $main-background;
+  // background-color: $main-background;
   @include dFlex($jc: space-around, $ai: flex-start);
+  padding: 50px 30px 50px 30px;
   .left {
     width: 40%;
     hyphens: auto;
@@ -19,6 +20,37 @@
   .right {
     width: 40%;
     max-width: 800px;
+  }
+
+  .right {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover,
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+      -webkit-text-fill-color: white !important;
+      transition: background-color 5000s ease-in-out 0s !important;
+    }
+
+    width: 100%;
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      border: unset;
+      box-sizing: border-box;
+      background-color: transparent;
+      color: white;
+      &:focus {
+        outline: none;
+        caret-color: white;
+      }
+    }
   }
 
   form {
@@ -39,7 +71,7 @@
     }
     > span {
       margin-left: 3%;
-      color: #E15544;
+      color: #e15544;
     }
     .line {
       height: 1px;
@@ -140,7 +172,11 @@
 }
 
 .popup-content {
-  background-image: linear-gradient(to top right, black 50%, rgb(15, 83, 72) 100%);
+  background-image: linear-gradient(
+    to top right,
+    black 50%,
+    rgb(15, 83, 72) 100%
+  );
   padding: 20px;
   border: 1px solid $main-color2;
   border-radius: 24px;
@@ -163,12 +199,25 @@
   cursor: pointer;
 }
 
+@media (max-width: 1300px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 800px) {
   .contact-me-div {
     align-items: center;
     flex-direction: column;
-    .left, .right{
-      width: 90%;
+    .left,
+    .right {
+      width: 100%;
     }
   }
 
@@ -183,6 +232,10 @@
     border-radius: 24px;
     width: 90%;
   }
+
+  .contact-me-div {
+    padding: 0px 16px 0 16px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -192,12 +245,16 @@
     width: 90%;
   }
 
-  h2{
-    font-size: 2rem;
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding-top: 30px;
   }
 }
 
-@media (max-height: 500px) and (min-width: 601px){
+@media (max-height: 500px) and (min-width: 601px) {
   .popup-content {
     margin: 0;
     width: 80%;

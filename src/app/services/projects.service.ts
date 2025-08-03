@@ -5,7 +5,6 @@ import { ProjectInterface } from '../interface/project.interface';
 @Injectable({
   providedIn: 'root',
 })
-
 export class ProjectsService {
   constructor() {}
 
@@ -24,8 +23,8 @@ export class ProjectsService {
 
     {
       name: 'Join',
-      link_github: 'https://github.com/MaikWpr83/Join-229-main',
-      live_link: '',
+      link_github: 'https://github.com/MaikWpr83/Join',
+      live_link: 'https://join.maik-wypior.de/',
       languages: ['JavaScript', 'Firebase', 'HTML', 'CSS'],
       image: 'assets/img/join.png',
       description_en:
@@ -35,27 +34,25 @@ export class ProjectsService {
     },
 
     {
-      name: 'Pokemon',
+      name: 'Pokedex',
       link_github: 'https://github.com/MaikWpr83/pokedex',
-      live_link: 'https://pokemon.maik-wypior.de/',
+      live_link: 'https://pokedex.maik-wypior.de/',
       languages: ['JavaScript', 'Rest-Api', 'HTML', 'CSS'],
       image: 'assets/img/pokemon.png',
       description_en:
-        'A Pokémon database featuring a vast collection of data on every Pokémon there is.',
+        'A Pokedex database featuring a vast collection of data on every Pokedex there is.',
       description_de:
-        'Eine Pokémon-Datenbank mit einer Fülle an Informationen über jedes Pokémon, das es gibt.',
+        'Eine Pokedex-Datenbank mit einer Fülle an Informationen über jedes Pokedex, das es gibt.',
     },
 
     {
       name: 'Ring of fire',
       link_github: 'https://github.com/MaikWpr83/Ring-of-fire',
       live_link: 'https://ring-of-fire.maik-wypior.de/',
-      languages: ['Angular', 'TypeScript', 'SCSS', ],
+      languages: ['Angular', 'TypeScript', 'SCSS'],
       image: 'assets/img/ring-of-fire.png',
-      description_en:
-        'A card game between friends with challenges.',
-      description_de:
-        'Ein Kartenspiel unter Freunden mit Herausforderungen.',
+      description_en: 'A card game between friends with challenges.',
+      description_de: 'Ein Kartenspiel unter Freunden mit Herausforderungen.',
     },
   ];
 
@@ -78,10 +75,10 @@ export class ProjectsService {
       alt: 'Firebase',
     },
 
-    { 
-      path: 'assets/img/skill-set/git.svg', 
-      name: 'Git', 
-      alt: 'Git' 
+    {
+      path: 'assets/img/skill-set/git.svg',
+      name: 'Git',
+      alt: 'Git',
     },
 
     {
@@ -90,10 +87,10 @@ export class ProjectsService {
       alt: 'JavaScript',
     },
 
-    { 
-      path: 'assets/img/skill-set/Api.svg', 
-      name: 'Rest-Api', 
-      alt: 'Rest-Api' 
+    {
+      path: 'assets/img/skill-set/Api.svg',
+      name: 'Rest-Api',
+      alt: 'Rest-Api',
     },
 
     {
@@ -102,24 +99,24 @@ export class ProjectsService {
       alt: 'Material Design',
     },
 
-    { 
-      path: 'assets/img/skill-set/scrum.svg', 
-      name: 'Scrum', 
-      alt: 'Scrum' 
+    {
+      path: 'assets/img/skill-set/scrum.svg',
+      name: 'Scrum',
+      alt: 'Scrum',
     },
 
-    { 
-      path: 'assets/img/skill-set/html.svg', 
-      name: 'HTML', 
-      alt: 'HTML' 
+    {
+      path: 'assets/img/skill-set/html.svg',
+      name: 'HTML',
+      alt: 'HTML',
     },
 
-    { 
-      path: 'assets/img/skill-set/Css.svg', 
-      name: 'CSS', 
-      alt: 'CSS' 
+    {
+      path: 'assets/img/skill-set/Css.svg',
+      name: 'CSS',
+      alt: 'CSS',
     },
-    
+
     {
       path: 'assets/img/skill-set/Growth.svg',
       name: 'Growth mindset',

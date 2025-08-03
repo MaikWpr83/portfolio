@@ -18,7 +18,7 @@
   }
   .content {
     background-image: linear-gradient(to top right, black, rgb(15, 83, 72));
-    box-shadow: 0px 0px 30px 10px $main-color2; 
+    box-shadow: 0px 0px 30px 10px $main-color2;
     padding: 4%;
     border-radius: 40px;
     border: 1px solid $main-color2;
@@ -174,11 +174,12 @@
     height: 90%;
   }
 
-.index{
-  display: none;
-}
+  .index {
+    display: none;
+  }
 
-  .left, .right {
+  .left,
+  .right {
     width: 48%;
   }
 
@@ -241,7 +242,7 @@
     > div {
       display: grid;
       grid-template-columns: 24px auto 24px auto;
-  
+
       > img {
         width: 24px;
         max-width: 20px;
@@ -293,8 +294,8 @@
     padding: 4px;
   }
 
-  .second{
-    >p{
+  .second {
+    > p {
       margin: 4px 0;
     }
   }
@@ -303,5 +304,5 @@
 .disabled {
   pointer-events: none;
   cursor: default;
-  opacity: 0.5; 
+  opacity: 0.5;
 }

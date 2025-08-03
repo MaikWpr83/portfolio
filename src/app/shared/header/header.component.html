@@ -1,55 +1,80 @@
 <nav>
-    <div>
-      <div class="left">
+  <div>
+    <div class="left">
+      <div class="logo-small">
+        <button (click)="navigateWithOffset('about-me', 100)">
+          <img class="logo1-small" src="assets/img/LOGO1.png" alt="logo1" />
+          <img class="logo2-small" src="assets/img/LOGO2.png" alt="logo2" />
+        </button>
+      </div>
 
-        <div class="logo-small">
-          <button (click)="navigateWithOffset('about-me', 100)">
-            <img class="logo1-small" src="assets/img/LOGO1.png" alt="logo1" />
-            <img class="logo2-small" src="assets/img/LOGO2.png" alt="logo2" />
-          </button>
-        </div>
+      <div class="switch">
+        <input
+          id="language-toggle-de"
+          class="check-toggle"
+          type="checkbox"
+          (change)="onToggleChange($event)"
+          [checked]="selectedLanguage === 'de'"
+        />
+        <label for="language-toggle-de">
+          <span class="lang en">EN</span>
+          <span class="lang de">DE</span>
+        </label>
+      </div>
 
-        <div class="switch">
-          <input id="language-toggle-de" class="check-toggle" type="checkbox" (change)="onToggleChange($event)" [checked]="selectedLanguage === 'de'"/>
-          <label for="language-toggle-de"> 
+      <button (click)="navigateWithOffset('about-me', 100)">
+        {{ "link1" | translate }}
+      </button>
+      <button (click)="navigateWithOffset('skill-set', 100)">
+        {{ "link2" | translate }}
+      </button>
+      <button (click)="navigateWithOffset('projects', 100)">
+        {{ "link3" | translate }}
+      </button>
+    </div>
+
+    <div class="right">
+      <div
+        class="hamburger-icon d-none"
+        (click)="toggleMenu()"
+        (click)="stopPropagation($event)"
+      >
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+
+      <div [ngClass]="{ 'd-none': !isMenuOpen }" class="hamburger-menu">
+        <button (click)="navigateWithOffset('about-me', 100)">
+          {{ "link1" | translate }}
+        </button>
+        <button (click)="navigateWithOffset('skill-set', 100)">
+          {{ "link2" | translate }}
+        </button>
+        <button (click)="navigateWithOffset('projects', 100)">
+          {{ "link3" | translate }}
+        </button>
+
+        <div>
+          <input
+            id="language-toggle-en"
+            class="check-toggle"
+            type="checkbox"
+            (change)="onToggleChange($event)"
+          />
+          <label for="language-toggle-en">
             <span class="lang en">EN</span>
             <span class="lang de">DE</span>
           </label>
         </div>
-  
-        <button (click)="navigateWithOffset('about-me', 100)">{{ "link1" | translate }}</button>
-        <button (click)="navigateWithOffset('skill-set', 100)">{{ "link2" | translate }}</button>
-        <button (click)="navigateWithOffset('projects', 100)">{{ "link3" | translate }}</button>
       </div>
 
-      <div class="right">
-        <div class="hamburger-icon d-none" (click)="toggleMenu()" (click)="stopPropagation($event)">
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-        </div>
-
-        <div [ngClass]="{ 'd-none': !isMenuOpen }" class="hamburger-menu">
-          <button (click)="navigateWithOffset('about-me', 100)">{{ "link1" | translate }}</button>
-          <button (click)="navigateWithOffset('skill-set', 100)">{{ "link2" | translate }}</button>
-          <button (click)="navigateWithOffset('projects', 100)">{{ "link3" | translate }}</button>
-
-          <div>
-            <input id="language-toggle-en" class="check-toggle" type="checkbox" (change)="onToggleChange($event)"/>
-            <label for="language-toggle-en"> 
-              <span class="lang en">EN</span>
-              <span class="lang de">DE</span>
-            </label>
-          </div>
-        </div>
-
-        <div class="logo">
-          <button (click)="navigateWithOffset('about-me', 100)">
-            <img class="logo1" src="assets/img/LOGO1.png" alt="logo1" />
-            <img class="logo2" src="assets/img/LOGO2.png" alt="logo2" />
-          </button>
-        </div>
-        
+      <div class="logo">
+        <button (click)="navigateWithOffset('about-me', 100)">
+          <img class="logo1" src="assets/img/LOGO1.png" alt="logo1" />
+          <img class="logo2" src="assets/img/LOGO2.png" alt="logo2" />
+        </button>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>

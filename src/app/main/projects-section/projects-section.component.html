@@ -1,4 +1,12 @@
-<div class="sc4-featured-p">
+<div
+  data-aos="fade-left"
+  data-aos-duration="1500"
+  data-aos-once="false"
+  data-aos-anchor-placement="top-center"
+  id="projects"
+  class="projects"
+>
+  <div class="sc4-featured-p">
     <div class="headline">
       <h3>Portfolio</h3>
       <h2>{{ "projects" | translate }}</h2>
@@ -8,9 +16,19 @@
 
     <div class="project-section">
       @for(project of service.projects; track $index){
-        <app-single-project [project]="project" (click)="openProject($index)" aria-label="open the project"></app-single-project>
+      <app-single-project
+        [project]="project"
+        (click)="openProject($index)"
+        aria-label="open the project"
+      ></app-single-project>
       }
     </div>
-  
-    <app-project-pop-up *ngIf="popupVisible" [project]="selectedProject" (close)="closePopup()" aria-label="close the project"></app-project-pop-up>
+
+    <app-project-pop-up
+      *ngIf="popupVisible"
+      [project]="selectedProject"
+      (close)="closePopup()"
+      aria-label="close the project"
+    ></app-project-pop-up>
   </div>
+</div>

@@ -9,9 +9,8 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [TranslateModule, RouterLink],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  styleUrl: './footer.component.scss',
 })
-
 export class FooterComponent {
   translate = inject(TranslationService);
   constructor(private scrollService: ScrollService) {}

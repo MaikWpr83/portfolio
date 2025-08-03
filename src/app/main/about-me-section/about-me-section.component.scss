@@ -1,10 +1,9 @@
 @import "../../../styles.scss";
 
 .sc2-about-me {
-  background-color: $main-background;
-  padding: 0 0 50px 0;
+  // background-color: $main-background;
+  padding: 100px 0 50px 0;
   width: $main-width;
-  max-width: $main-max-width;
   @include dFlex($jc: space-around, $g: 80px);
 }
 
@@ -12,14 +11,18 @@
   position: relative;
   width: 35%;
   margin-bottom: 8%;
-  margin-top: 150px;
+  margin-top: 50px;
   @include customShadow();
   z-index: 10;
   .image {
-    position: relative; 
-    background-image: linear-gradient(to top right, black 10%, rgb(15, 83, 72) 100%);
-    background-size: 300% 300%; 
-    animation: animateBackground 8s ease-in-out infinite; 
+    position: relative;
+    background-image: linear-gradient(
+      to top right,
+      black 10%,
+      rgb(15, 83, 72) 100%
+    );
+    background-size: 300% 300%;
+    animation: animateBackground 8s ease-in-out infinite;
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 40px;
@@ -93,6 +96,10 @@
     width: 40%;
   }
 
+  h2 {
+    font-size: 2.5rem;
+  }
+
   .left {
     width: 45%;
   }
@@ -101,13 +108,12 @@
 @media (max-width: 800px) {
   .sc2-about-me {
     padding: 30px 30px;
-    @include dFlex($g:30px);
+    @include dFlex($g: 30px);
     flex-direction: column;
   }
 
   .align-right {
     width: 80%;
-    margin-bottom: 30px;
   }
 
   .left {
@@ -138,13 +144,19 @@
 
   .left {
     width: 85%;
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
   }
 }
 
 @media (max-width: 400px) {
   .align-right {
     width: 100%;
-    padding: 15% 2% 0 2%;
+    padding: 2%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
   }
 }

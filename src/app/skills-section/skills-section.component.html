@@ -1,11 +1,12 @@
-<div class="sc3-skill-set">
-
+<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+  <div class="sc3-skill-set">
     <div class="align-skill-set">
       <h3>{{ "skill" | translate }}</h3>
 
       <div class="skill-set">
-        <h2 class="skills"> 
-          {{ "skills" | translate }}</h2>
+        <h2 class="skills">
+          {{ "skills" | translate }}
+        </h2>
         <p class="p5">
           {{ "p5" | translate }}
         </p>
@@ -15,13 +16,16 @@
         <p class="p6">
           {{ "p6" | translate }}
         </p>
-        <button (click)="navigateWithOffset('contact1', 100)" class="slide-button" aria-label="scroll to contact section">
+        <button
+          (click)="navigateWithOffset('contact1', 100)"
+          class="slide-button"
+          aria-label="scroll to contact section"
+        >
           <span class="slide-text">Let's Talk</span>
         </button>
       </div>
-
     </div>
-  
+
     <div class="skill-set-icons">
       <div class="icon-container">
         @for(icon of service.icons; track icon){
@@ -31,12 +35,15 @@
           @if(icon.name === 'Growth mindset'){
           <div class="talk-bubble talk-bubble-left">
             <span>{{ "popup-msg" | translate }}</span>
-            <img src="assets/img/skill-set/react-vue.svg" alt="interestsPopUp" />
+            <img
+              src="assets/img/skill-set/react-vue.svg"
+              alt="interestsPopUp"
+            />
           </div>
           }
         </div>
         }
       </div>
     </div>
-    
   </div>
+</div>

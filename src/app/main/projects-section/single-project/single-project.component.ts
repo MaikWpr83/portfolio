@@ -8,7 +8,6 @@ import { ProjectInterface } from '../../../interface/project.interface';
   templateUrl: './single-project.component.html',
   styleUrl: './single-project.component.scss',
 })
-
 export class SingleProjectComponent {
-  @Input() project!: ProjectInterface;;
+  @Input() project!: ProjectInterface;
 }

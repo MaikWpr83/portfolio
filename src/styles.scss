@@ -1,11 +1,9 @@
-
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/FiraCode-Bold.ttf")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/FiraCode-Bold.ttf") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
@@ -13,29 +11,36 @@
   font-family: "Karla";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/fonts/karla-Regular.ttf")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/fonts/karla-Regular.ttf") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 // scrollbar styling
 ::-webkit-scrollbar {
-    width: 14px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgb(46, 100, 91) 20%, rgb(38, 129, 114) 80%);
-    border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    180deg,
+    rgb(46, 100, 91) 20%,
+    rgb(38, 129, 114) 80%
+  );
+  border-radius: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgb(38, 129, 114) 20%, rgb(46, 100, 91) 80%);
-    border: 3px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(
+    180deg,
+    rgb(38, 129, 114) 20%,
+    rgb(46, 100, 91) 80%
+  );
+  border: 3px solid rgba(255, 255, 255, 0.4);
 }
 
 $main-color: white;
@@ -43,12 +48,12 @@ $main-color2: #3dcfb6;
 $main-color3: rgb(31, 46, 43);
 
 // main container background
-$main-background: #1A2120;
+// $main-background: #1c1c1c;
 $main-width: 100%;
 $main-max-width: 1920px;
 $main-padding: 0 4%;
 
-*{
+* {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -117,9 +122,8 @@ textarea {
   }
 }
 
-
 @mixin linkDot($positionX: -16px, $positionY: 25%, $hover-color: white) {
-  > a:not(.no-dot), 
+  > a:not(.no-dot),
   > button:not(.no-dot) {
     position: relative;
     &::after {
@@ -160,10 +164,11 @@ body {
 h2 {
   color: $main-color2;
   margin: 0;
+  font-size: 3rem;
 }
 
 h3 {
-  font-family: 'Karla';
+  font-family: "Karla";
   color: $main-color2;
   font-size: 1.2rem;
   margin: 0 0 20px 0;
@@ -198,6 +203,6 @@ h3 {
   }
 }
 
-.d-none{
+.d-none {
   display: none;
 }

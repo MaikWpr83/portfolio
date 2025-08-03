@@ -1,5 +1,5 @@
 export interface SkillIcon {
-    path: string;
-    name: string;
-    alt?: string;
+  path: string;
+  name: string;
+  alt?: string;
 }

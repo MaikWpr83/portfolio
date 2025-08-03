@@ -1,10 +1,8 @@
 @import "../../../styles.scss";
 
 .sc4-featured-p {
-  background-color: $main-background;
-  padding: $main-padding;
-  padding-top: 8%;
-  padding-bottom: 8%;
+  // background-color: $main-background;
+  padding: 100px 30px 100px 30px;
 }
 
 .line {
@@ -15,7 +13,7 @@
 
 @media (max-width: 1150px) {
   .sc4-featured-p {
-    padding: 30px;
+    padding: 70px 30px 100px 30px;
   }
 }
 
@@ -27,13 +25,13 @@
 
 @media (max-width: 580px) {
   .sc4-featured-p {
-    padding: 16px;
+    padding: 25px 16px 50px 16px;
     > p {
       text-align: justify;
     }
   }
 
-  h2{
+  h2 {
     font-size: 2.2rem;
     hyphens: auto;
   }
@@ -41,7 +39,7 @@
 
 @media (max-width: 440px) {
   .sc4-featured-p {
-    padding: 16px;
+    padding: 25px 16px 50px 16px;
     .headline {
       > p {
         text-align: justify;
@@ -57,8 +55,8 @@
     .headline {
       > p {
         font-size: 0.9rem;
-        word-spacing: -.2rem;
-      }   
+        word-spacing: -0.2rem;
+      }
     }
-  } 
+  }
 }

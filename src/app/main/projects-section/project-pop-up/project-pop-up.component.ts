@@ -9,11 +9,10 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './project-pop-up.component.html',
   styleUrls: ['./project-pop-up.component.scss'],
 })
-
 export class ProjectPopUpComponent {
   @Input() project!: ProjectInterface;
   @Output() close = new EventEmitter<void>();
-  
+
   constructor(private translate: TranslateService) {
     this.translate.onLangChange.subscribe(() => {
       this.updateTranslatedText();
@@ -24,7 +23,7 @@ export class ProjectPopUpComponent {
   projectIndex: number = 0;
 
   ngOnInit() {
-    this.updateTranslatedText(); 
+    this.updateTranslatedText();
     this.projectIndex = this.service.projects.findIndex(
       (p) => p === this.project
     );
@@ -50,8 +49,12 @@ export class ProjectPopUpComponent {
   public translatedH3de: string = 'Worum geht es in diesem Projekt?';
 
   private updateTranslatedText() {
-    const currentLang = this.translate.currentLang; 
-    this.translatedDescription = currentLang === 'de' ? this.project.description_de : this.project.description_en;
-    this.translatedH3 = currentLang === 'de' ? this.translatedH3de : this.translatedH3eng;
+    const currentLang = this.translate.currentLang;
+    this.translatedDescription =
+      currentLang === 'de'
+        ? this.project.description_de
+        : this.project.description_en;
+    this.translatedH3 =
+      currentLang === 'de' ? this.translatedH3de : this.translatedH3eng;
   }
 }

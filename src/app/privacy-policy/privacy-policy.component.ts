@@ -9,9 +9,8 @@ import { ActivatedRoute } from '@angular/router';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './privacy-policy.component.html',
-  styleUrls: ['./privacy-policy.component.scss'] 
+  styleUrls: ['./privacy-policy.component.scss'],
 })
-
 export class PrivacyPolicyComponent implements OnInit {
   constructor(
     private translate: TranslationService,
@@ -19,7 +18,7 @@ export class PrivacyPolicyComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.fragment.subscribe(fragment => {
+    this.route.fragment.subscribe((fragment) => {
       setTimeout(() => {
         if (!fragment || fragment === 'top') {
           window.scrollTo({ top: 0, behavior: 'smooth' });

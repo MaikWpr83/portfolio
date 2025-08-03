@@ -6,7 +6,7 @@
   width: $main-width;
   background-size: cover;
   background-position: center;
-  background-image: url('../../../assets/img/bg1.png');
+  // background-image: url("../../../assets/img/bg1.png");
 }
 
 .hero {
@@ -86,7 +86,6 @@
 
   @keyframes moveArrow {
     0%,
-
     100% {
       transform: translateY(-4px);
     }
@@ -102,7 +101,7 @@
   flex-direction: column;
   gap: 8px;
   @include linkDot(
-    $positionX: 50px,
+    $positionX: 45px,
     $positionY: 50%,
     $hover-color: $main-color2
   );
@@ -137,7 +136,9 @@
 
 @media (max-width: 800px) {
   .hero {
-    padding: 0 2%;
+    padding: 0% 2%;
+    height: auto;
+    min-height: calc(100vh - 100px);
     .right {
       @include linkDot(
         $positionX: -12px,
@@ -155,6 +156,7 @@
   }
 
   .center {
+    margin-bottom: 250px;
     > h1 {
       word-break: normal;
       text-align: center;
@@ -172,6 +174,7 @@
   .center {
     > h1 {
       font-size: 4rem;
+      padding-top: 15px;
     }
     .button-div {
       gap: 15px;
@@ -188,11 +191,19 @@
       font-size: 1rem;
     }
     > h1 {
-      margin-top: 0;
       font-size: 3rem;
+      padding-bottom: 15px;
     }
     .button-div {
       gap: 10px;
+    }
+  }
+
+  .right {
+    > a {
+      > img {
+        width: 25px;
+      }
     }
   }
 }
@@ -214,16 +225,5 @@
 
   .center[_ngcontent-ng-c3744515764] {
     bottom: 61%;
-  }
-}
-
-@media (max-height: 800px) {
-  .hero {
-    height: auto;
-    min-height: calc(100vh - 100px);
-  }
-  
-  .center {
-    margin-bottom: 250px;
   }
 }

@@ -1,10 +1,10 @@
 @import "../../styles.scss";
 
-.bg{
-  background-image: url('../../assets/img/bg1.png');
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  background-position: center; 
+.bg {
+  background-image: url("../../assets/img/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .content {
@@ -19,8 +19,8 @@ h1 {
   margin-top: 0;
 }
 
-h2{
-    font-size: clamp(1.5rem, 3.5vw, 5rem);
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 5rem);
 }
 
 h3 {
@@ -36,5 +36,9 @@ a {
   div {
     margin: 2% !important;
     hyphens: auto;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 4vw, 6rem);
   }
 }

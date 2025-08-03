@@ -4,17 +4,16 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../services/translate.service';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-me-section',
   standalone: true,
-  imports: [FormsModule, TranslateModule, CommonModule],
+  imports: [FormsModule, TranslateModule, CommonModule, RouterLink],
   templateUrl: './contact-me-section.component.html',
-  styleUrl: './contact-me-section.component.scss'
+  styleUrl: './contact-me-section.component.scss',
 })
-
 export class ContactMeSectionComponent {
-
   translate = inject(TranslationService);
   http = inject(HttpClient);
 
@@ -34,10 +33,10 @@ export class ContactMeSectionComponent {
       headers: {
         'Content-Type': 'application/json',
       },
-      responseType: 'text' as 'json'  
+      responseType: 'text' as 'json',
     },
   };
-  
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
@@ -61,7 +60,7 @@ export class ContactMeSectionComponent {
   }
 
   private setFormControlsTouched(ngForm: NgForm) {
-    Object.keys(ngForm.controls).forEach(controlName => {
+    Object.keys(ngForm.controls).forEach((controlName) => {
       ngForm.controls[controlName].markAsTouched();
     });
   }
@@ -70,7 +69,7 @@ export class ContactMeSectionComponent {
   openPopup() {
     this.showPopup = true;
   }
-  
+
   closePopup() {
     this.showPopup = false;
   }
