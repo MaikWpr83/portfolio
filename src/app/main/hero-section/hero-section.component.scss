@@ -6,7 +6,6 @@
   width: $main-width;
   background-size: cover;
   background-position: center;
-  // background-image: url("../../../assets/img/bg1.png");
 }
 
 .hero {
@@ -138,7 +137,7 @@
   .hero {
     padding: 0% 2%;
     height: auto;
-    min-height: calc(100vh - 100px);
+    min-height: calc(70vh - 100px);
     .right {
       @include linkDot(
         $positionX: -12px,
